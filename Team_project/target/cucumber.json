@@ -1,0 +1,67 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2020-01-17T00:14:54.129Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5794144900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.setUp()"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "Google",
+        "description": "",
+        "id": "google-search;google",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 698832800,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I am on Google Home Page \"https://google.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://google.com\"",
+                  "offset": 25
+                }
+              ],
+              "location": "google.i_am_on_Google_Home_Page(String)"
+            },
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@google"
+          }
+        ]
+      }
+    ],
+    "name": "google search",
+    "description": "  I want to use this template for my feature file",
+    "id": "google-search",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/google.feature",
+    "tags": [
+      {
+        "name": "@google",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
