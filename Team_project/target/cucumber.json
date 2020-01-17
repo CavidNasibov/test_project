@@ -3,11 +3,51 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2020-01-17T00:14:54.129Z",
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1663914600,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is on bostonIvyTech home page",
+            "match": {
+              "location": "bostonIvyTech_HP.user_is_on_bostonIvyTech_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:86)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat org.junit.Assert.assertTrue(Assert.java:52)\r\n\tat stepDefenetion.bostonIvyTech_HP.user_verifies_bostonIvyTech_title(bostonIvyTech_HP.java:32)\r\n\tat ✽.User  verifies  bostonIvyTech title \"Boston Ivy Tech � Your Signature in IT\"(file:src/test/resources/features/bostonIvyTech_HP.feature:6)\r\n",
+              "duration": 11490800,
+              "status": "failed"
+            },
+            "line": 6,
+            "name": "User  verifies  bostonIvyTech title \"Boston Ivy Tech � Your Signature in IT\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Boston Ivy Tech � Your Signature in IT\"",
+                  "offset": 36
+                }
+              ],
+              "location": "bostonIvyTech_HP.user_verifies_bostonIvyTech_title(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-01-17T03:02:47.203Z",
         "before": [
           {
             "result": {
-              "duration": 5794144900,
+              "duration": 6217483200,
               "status": "passed"
             },
             "match": {
@@ -15,47 +55,65 @@
             }
           }
         ],
-        "line": 6,
-        "name": "Google",
+        "line": 8,
+        "name": "I am on bostonIvyTech home page",
         "description": "",
-        "id": "google-search;google",
+        "id": "i-want-to-verify-almost-everything-on-bostonivytech-home-page;i-am-on-bostonivytech-home-page",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 698832800,
-              "status": "passed"
+              "status": "undefined"
             },
-            "line": 7,
-            "name": "I am on Google Home Page \"https://google.com\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"https://google.com\"",
-                  "offset": 25
-                }
-              ],
-              "location": "google.i_am_on_Google_Home_Page(String)"
-            },
+            "line": 9,
+            "name": "User verifies primary-menu options",
+            "match": {},
+            "rows": [
+              {
+                "cells": [
+                  "Home"
+                ]
+              },
+              {
+                "cells": [
+                  "About"
+                ]
+              },
+              {
+                "cells": [
+                  "Services"
+                ]
+              },
+              {
+                "cells": [
+                  "Boot Camps"
+                ]
+              },
+              {
+                "cells": [
+                  "Contact"
+                ]
+              }
+            ],
             "keyword": "Given "
           }
         ],
         "tags": [
           {
-            "name": "@google"
+            "name": "@bostonIvyTech_HP"
           }
         ]
       }
     ],
-    "name": "google search",
-    "description": "  I want to use this template for my feature file",
-    "id": "google-search",
+    "name": "I want to verify almost everything on bostonIvyTech Home page",
+    "description": "",
+    "id": "i-want-to-verify-almost-everything-on-bostonivytech-home-page",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/google.feature",
+    "uri": "file:src/test/resources/features/bostonIvyTech_HP.feature",
     "tags": [
       {
-        "name": "@google",
+        "name": "@bostonIvyTech_HP",
         "type": "Tag",
         "location": {
           "line": 1,
