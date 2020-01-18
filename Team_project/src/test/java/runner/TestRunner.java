@@ -6,11 +6,12 @@ import io.cucumber.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(plugin = {"json:target/cucumber.json" }, 
-				features = "src/test/resources/features", 
+				features = "src/test/resources/PrimaryMenuFeatures/BIT_HomePage.feature", 
 				glue = { "stepDefenetion" },
-				tags = {"@bostonIvyTech_HP"},
+				tags = {"@BIT_HP"},
 				dryRun = false)
 
 public class TestRunner {
 
 }
+

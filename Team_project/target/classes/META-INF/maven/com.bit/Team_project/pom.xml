@@ -99,7 +99,7 @@
 					<systemPropertyVariables>
 						<tags></tags>
 						<browser>chrome</browser>
-						<url>https://www.etsy.com/</url>
+						<url>https://bostonivytech.com/</url>
 						<buildDirectory>${project.build.directory}</buildDirectory>
 					</systemPropertyVariables>
 				</configuration>
