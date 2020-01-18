@@ -3,11 +3,50 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2020-01-17T00:14:54.129Z",
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1752224600,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is on bostonIvyTech home page",
+            "match": {
+              "location": "BIT_HomePage_StepDef.user_is_on_bostonIvyTech_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 20855799,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User  verifies  bostonIvyTech title \"Boston Ivy Tech � Your Signature in IT\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Boston Ivy Tech � Your Signature in IT\"",
+                  "offset": 36
+                }
+              ],
+              "location": "BIT_HomePage_StepDef.user_verifies_bostonIvyTech_title(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-01-18T16:04:42.427Z",
         "before": [
           {
             "result": {
-              "duration": 5794144900,
+              "duration": 5964375701,
               "status": "passed"
             },
             "match": {
@@ -15,47 +54,108 @@
             }
           }
         ],
-        "line": 6,
-        "name": "Google",
+        "line": 8,
+        "name": "I am on bostonIvyTech home page",
         "description": "",
-        "id": "google-search;google",
+        "id": "i-want-to-verify-almost-everything-on-bostonivytech-home-page;i-am-on-bostonivytech-home-page",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 698832800,
+              "duration": 4087320900,
               "status": "passed"
             },
-            "line": 7,
-            "name": "I am on Google Home Page \"https://google.com\"",
+            "line": 9,
+            "name": "User verifies primary-menu options",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"https://google.com\"",
-                  "offset": 25
-                }
-              ],
-              "location": "google.i_am_on_Google_Home_Page(String)"
+              "location": "BIT_HomePage_StepDef.user_verifies_primary_menu_options(DataTable)"
             },
+            "rows": [
+              {
+                "cells": [
+                  "Home"
+                ]
+              },
+              {
+                "cells": [
+                  "About"
+                ]
+              },
+              {
+                "cells": [
+                  "Services"
+                ]
+              },
+              {
+                "cells": [
+                  "Boot Camps"
+                ]
+              },
+              {
+                "cells": [
+                  "Contact"
+                ]
+              }
+            ],
             "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:86)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat org.junit.Assert.assertTrue(Assert.java:52)\r\n\tat stepDefenetion.BIT_HomePage_StepDef.user_verifies_all_head_titles(BIT_HomePage_StepDef.java:77)\r\n\tat ✽.User verifies all head titles(file:src/test/resources/PrimaryMenuFeatures/BIT_HomePage.feature:15)\r\n",
+              "duration": 4176803800,
+              "status": "failed"
+            },
+            "line": 15,
+            "name": "User verifies all head titles",
+            "match": {
+              "location": "BIT_HomePage_StepDef.user_verifies_all_head_titles(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Online or In-Class"
+                ]
+              },
+              {
+                "cells": [
+                  "Join our Boot Camp"
+                ]
+              },
+              {
+                "cells": [
+                  "Our Services"
+                ]
+              },
+              {
+                "cells": [
+                  "Our Boot camps"
+                ]
+              },
+              {
+                "cells": [
+                  "What Does Software Engineer in Test Do?"
+                ]
+              }
+            ],
+            "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@google"
+            "name": "@BIT_HP"
           }
         ]
       }
     ],
-    "name": "google search",
-    "description": "  I want to use this template for my feature file",
-    "id": "google-search",
+    "name": "I want to verify almost everything on bostonIvyTech Home page",
+    "description": "",
+    "id": "i-want-to-verify-almost-everything-on-bostonivytech-home-page",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/google.feature",
+    "uri": "file:src/test/resources/PrimaryMenuFeatures/BIT_HomePage.feature",
     "tags": [
       {
-        "name": "@google",
+        "name": "@BIT_HP",
         "type": "Tag",
         "location": {
           "line": 1,
