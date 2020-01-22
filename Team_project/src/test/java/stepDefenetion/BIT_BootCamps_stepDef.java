@@ -32,81 +32,77 @@ public class BIT_BootCamps_stepDef {
 		boot.clickBootCamps.click();
 	}
 
-//	@Then("User verifies head title of page {string}")
-	public void user_verifies_head_title_of_page(String expectedHeader) {
+	@Then("User verifies head title of page OUR BOOT CAMP")
+	public void user_verifies_head_title_of_page_OUR_BOOT_CAMP() {
 		String actualHeader = boot.bootCampsHeadTitle.getText();
+		String expectedHeader = "OUR BOOT CAMP";
 		System.out.println(expectedHeader);
 		System.out.println(actualHeader);
-		   assertEquals(expectedHeader, actualHeader);
+		assertEquals(expectedHeader, actualHeader);
 	}
 
-//	@Then("User verifies headlines of page")
+	@Then("User verifies headlines of page")
 	public void user_verifies_headlines_of_page(io.cucumber.datatable.DataTable dataTable) throws InterruptedException {
 		Thread.sleep(4000);
-		   List<String> actualTopMenus=Utility.webElementToStringList(boot.bootCampsHeadlines) ;
-		    
-		    
-		    List<String> expectedTopMenus1=dataTable.asList();
-		    List<String> expectedTopMenus=new ArrayList<String>();
-		    
-		    for (String string : expectedTopMenus1) {
-		    	expectedTopMenus.add(string);
-			
-		    }
-		    Collections.sort(actualTopMenus);
-		    Collections.sort(expectedTopMenus);
-		    
-		    System.out.println(actualTopMenus);
-		    System.out.println(expectedTopMenus);
-		    assertTrue(actualTopMenus.equals(expectedTopMenus));
+		List<String> actualTopMenus = Utility.webElementToStringList(boot.bootCampsHeadlines);
+
+		List<String> expectedTopMenus1 = dataTable.asList();
+		List<String> expectedTopMenus = new ArrayList<String>();
+
+		for (String string : expectedTopMenus1) {
+			expectedTopMenus.add(string);
+
+		}
+		Collections.sort(actualTopMenus);
+		Collections.sort(expectedTopMenus);
+
+		System.out.println(actualTopMenus);
+		System.out.println(expectedTopMenus);
+		assertTrue(actualTopMenus.equals(expectedTopMenus));
 	}
 
-//	@Then("User verifies headline explenations")
-	public void user_verifies_headline_explenations(io.cucumber.datatable.DataTable dataTable) throws InterruptedException {
+	@Then("User verifies headline explenations")
+	public void user_verifies_headline_explenations(io.cucumber.datatable.DataTable dataTable)
+			throws InterruptedException {
 		Thread.sleep(4000);
-		   List<String> actualTopMenus=Utility.webElementToStringList(boot.bootCampsArticles) ;
-		    
-		    
-		    List<String> expectedTopMenus1=dataTable.asList();
-		    List<String> expectedTopMenus=new ArrayList<String>();
-		    
-		    for (String string : expectedTopMenus1) {
-		    	expectedTopMenus.add(string);
-			
-		    }
-		    Collections.sort(actualTopMenus);
-		    Collections.sort(expectedTopMenus);
-		    
-		    System.out.println(actualTopMenus);
-		    System.out.println(expectedTopMenus);
-		    assertTrue(actualTopMenus.equals(expectedTopMenus));
+		List<String> actualTopMenus = Utility.webElementToStringList(boot.bootCampsArticles);
+
+		List<String> expectedTopMenus1 = dataTable.asList();
+		List<String> expectedTopMenus = new ArrayList<String>();
+
+		for (String string : expectedTopMenus1) {
+			expectedTopMenus.add(string);
+
+		}
+		for (int i = 0; i < actualTopMenus.size(); i++) {
+			assertTrue(actualTopMenus.get(i).contains(expectedTopMenus1.get(i)));
+		}
+
+		System.out.println(actualTopMenus);
+		System.out.println(expectedTopMenus);
+
 	}
 
 	@Then("User check description of applications")
-	public void user_check_description_of_applications(io.cucumber.datatable.DataTable dataTable) throws InterruptedException {
+	public void user_check_description_of_applications(io.cucumber.datatable.DataTable dataTable)
+			throws InterruptedException {
 		Thread.sleep(4000);
-		   List<String> actualTopMenus=Utility.webElementToStringList(boot.bootCampsAppDesc) ;
-		    
-		    
-		    List<String> expectedTopMenus1=dataTable.asList();
-		    List<String> expectedTopMenus=new ArrayList<String>();
-		    
-		    for (String string : expectedTopMenus1) {
-		    	expectedTopMenus.add(string);
-			
-		    }
-		    Collections.sort(actualTopMenus);
-		    Collections.sort(expectedTopMenus);
-		    
-		    System.out.println(actualTopMenus);
-		    System.out.println(expectedTopMenus);
-		    assertTrue(actualTopMenus.equals(expectedTopMenus));
+		List<String> actualTopMenus = Utility.webElementToStringList(boot.bootCampsAppDesc);
+
+		List<String> expectedTopMenus1 = dataTable.asList();
+		List<String> expectedTopMenus = new ArrayList<String>();
+
+		for (String string : expectedTopMenus1) {
+			expectedTopMenus.add(string);
+
+		}
+		for (int i = 0; i < actualTopMenus.size(); i++) {
+			assertTrue(actualTopMenus.get(i).contains(expectedTopMenus1.get(i)));
+		}
+
+		System.out.println(actualTopMenus);
+		System.out.println(expectedTopMenus);
+
 	}
-	
-	
-	
-	
-	
-	
-	
+
 }

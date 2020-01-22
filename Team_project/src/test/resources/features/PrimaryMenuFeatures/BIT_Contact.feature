@@ -14,24 +14,17 @@ Feature: Boston Ivy Tech - Contact
       | Services   |
       | Boot Camps |
       | Contact    |
-    Then User verifies head title of page "Contact"
+    Then User verifies head title of page Contact
     Then User verifies heading titles
       | WE'RE READY, LET'S TALK. |
       | CONTACT INFO             |
     Then User verifies contact head titles
-      | CONTACT US|
-      | ADDRESS  |
-      | EMAIL US |
-      | CALL US  |
-    #Then User verifies contact informations
-      #| 827 Main Street, Woburn, MA 01801 |
-      #| info@bostonivytech.com            |
-      #| (857) 209-4939                    |
+      | CONTACT US |
+      | ADDRESS    |
+      | EMAIL US   |
+      | CALL US    |
     Then User verifies head titles of registration table
       | Your Name (required)  |
       | Your Email (required) |
       | Subject               |
       | Your Message          |
-    #And User verifies footer section
-      #| 827 Main Street, Woburn, MA 01940  \|  Phone: (857) 209-4939  \|  Email: info@bostonivytech.com |
-      #| Copyright © 2020 Boston Ivy Tec                                                                 |

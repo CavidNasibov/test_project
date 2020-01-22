@@ -10,8 +10,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class BIT_About_page {
 	WebDriver driver;
-	
-	
+
 	public BIT_About_page(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 	}
@@ -24,29 +23,18 @@ public class BIT_About_page {
 		driver.get(url);
 	}
 
-	
-	
-	@FindBy (css = "[id = 'menu-item-12']")
+	@FindBy(css = "[id = 'menu-item-12']")
 	public WebElement clickAbout;
-	
-	@FindBy (css = "[class *='title'] span")
+
+	@FindBy(css = "[class *='title'] span")
 	public WebElement aboutHeadTitle;
-	
-	@FindBy (css = "[class *='size-default'] ")
-    public List<WebElement> aboutHeadlines;
-	
-	@FindBy (css = "p:nth-child(1)")
-    public List<WebElement> aboutArticles;
-	
-	 @FindBy (css = " [class *= 'footer-section']")
-	    public List<WebElement> footerSections;
+
+	@FindBy(css = "[class *='size-default'] ")
+	public List<WebElement> aboutHeadlines;
+
+	@FindBy(css = "p:nth-child(1)")
+	public List<WebElement> aboutArticles;
+
+	@FindBy(css = "[class *= 'footer-section']")
+	public List<WebElement> footerSections;
 }
-
-
-
-
-
-
-
-
-

@@ -3,7 +3,7 @@
     "line": 2,
     "elements": [
       {
-        "line": 4,
+        "line": 5,
         "name": "",
         "description": "",
         "type": "background",
@@ -11,10 +11,10 @@
         "steps": [
           {
             "result": {
-              "duration": 1752224600,
+              "duration": 1853440800,
               "status": "passed"
             },
-            "line": 5,
+            "line": 6,
             "name": "User is on bostonIvyTech home page",
             "match": {
               "location": "BIT_HomePage_StepDef.user_is_on_bostonIvyTech_home_page()"
@@ -23,10 +23,10 @@
           },
           {
             "result": {
-              "duration": 20855799,
+              "duration": 9217700,
               "status": "passed"
             },
-            "line": 6,
+            "line": 7,
             "name": "User  verifies  bostonIvyTech title \"Boston Ivy Tech � Your Signature in IT\"",
             "match": {
               "arguments": [
@@ -42,11 +42,11 @@
         ]
       },
       {
-        "start_timestamp": "2020-01-18T16:04:42.427Z",
+        "start_timestamp": "2020-01-22T01:58:32.052Z",
         "before": [
           {
             "result": {
-              "duration": 5964375701,
+              "duration": 5936418700,
               "status": "passed"
             },
             "match": {
@@ -54,19 +54,42 @@
             }
           }
         ],
-        "line": 8,
-        "name": "I am on bostonIvyTech home page",
+        "line": 9,
+        "name": "User is going to verify all elements on \"Contact\" page",
         "description": "",
-        "id": "i-want-to-verify-almost-everything-on-bostonivytech-home-page;i-am-on-bostonivytech-home-page",
+        "id": "boston-ivy-tech---contact;user-is-going-to-verify-all-elements-on-\"contact\"-page",
+        "after": [
+          {
+            "result": {
+              "duration": 619753700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.tearDown()"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 4087320900,
+              "duration": 1280691800,
               "status": "passed"
             },
-            "line": 9,
+            "line": 10,
+            "name": "User clicks on Contact",
+            "match": {
+              "location": "BIT_Contact_stepDef.user_clicks_on_Contact()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4161513100,
+              "status": "passed"
+            },
+            "line": 11,
             "name": "User verifies primary-menu options",
             "match": {
               "location": "BIT_HomePage_StepDef.user_verifies_primary_menu_options(DataTable)"
@@ -102,39 +125,103 @@
           },
           {
             "result": {
-              "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:86)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat org.junit.Assert.assertTrue(Assert.java:52)\r\n\tat stepDefenetion.BIT_HomePage_StepDef.user_verifies_all_head_titles(BIT_HomePage_StepDef.java:77)\r\n\tat ✽.User verifies all head titles(file:src/test/resources/PrimaryMenuFeatures/BIT_HomePage.feature:15)\r\n",
-              "duration": 4176803800,
-              "status": "failed"
+              "duration": 42800800,
+              "status": "passed"
             },
-            "line": 15,
-            "name": "User verifies all head titles",
+            "line": 17,
+            "name": "User verifies head title of page Contact",
             "match": {
-              "location": "BIT_HomePage_StepDef.user_verifies_all_head_titles(DataTable)"
+              "location": "BIT_Contact_stepDef.user_verifies_head_title_of_page_Contact()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 4075618500,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User verifies heading titles",
+            "match": {
+              "location": "BIT_Contact_stepDef.user_verifies_heading_titles(DataTable)"
             },
             "rows": [
               {
                 "cells": [
-                  "Online or In-Class"
+                  "WE\u0027RE READY, LET\u0027S TALK."
                 ]
               },
               {
                 "cells": [
-                  "Join our Boot Camp"
+                  "CONTACT INFO"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 4154964800,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "User verifies contact head titles",
+            "match": {
+              "location": "BIT_Contact_stepDef.user_verifies_contact_head_titles(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "CONTACT US"
                 ]
               },
               {
                 "cells": [
-                  "Our Services"
+                  "ADDRESS"
                 ]
               },
               {
                 "cells": [
-                  "Our Boot camps"
+                  "EMAIL US"
                 ]
               },
               {
                 "cells": [
-                  "What Does Software Engineer in Test Do?"
+                  "CALL US"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 4140597200,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "User verifies head titles of registration table",
+            "match": {
+              "location": "BIT_Contact_stepDef.user_verifies_head_titles_of_registration_table(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Your Name (required)"
+                ]
+              },
+              {
+                "cells": [
+                  "Your Email (required)"
+                ]
+              },
+              {
+                "cells": [
+                  "Subject"
+                ]
+              },
+              {
+                "cells": [
+                  "Your Message"
                 ]
               }
             ],
@@ -143,19 +230,19 @@
         ],
         "tags": [
           {
-            "name": "@BIT_HP"
+            "name": "@BIT_Contact"
           }
         ]
       }
     ],
-    "name": "I want to verify almost everything on bostonIvyTech Home page",
-    "description": "",
-    "id": "i-want-to-verify-almost-everything-on-bostonivytech-home-page",
+    "name": "Boston Ivy Tech - Contact",
+    "description": "  This feature verifies all items on \"Contact\" page",
+    "id": "boston-ivy-tech---contact",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/PrimaryMenuFeatures/BIT_HomePage.feature",
+    "uri": "classpath:features/PrimaryMenuFeatures/BIT_Contact.feature",
     "tags": [
       {
-        "name": "@BIT_HP",
+        "name": "@BIT_Contact",
         "type": "Tag",
         "location": {
           "line": 1,

@@ -17,7 +17,7 @@ public class Hook {
 	}
 	
 	
-//	@After
+	@After
 	public void tearDown() {
 		sb.closeDriver();
 	}

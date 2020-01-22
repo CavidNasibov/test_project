@@ -35,7 +35,7 @@ public class BIT_HomePage_page {
     @FindBy (css = "[class= 'elementor-testimonial-content'")
     public List<WebElement> elementTestContent;
     
-    @FindBy (css = " [class *= 'footer-section']")
+    @FindBy (css = "[class *= 'footer-section']")
     public List<WebElement> footerSections;
     
     @FindBy (css = "[class = 'elementor-icon-box-description']")
